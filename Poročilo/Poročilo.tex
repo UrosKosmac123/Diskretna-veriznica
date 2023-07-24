@@ -1,0 +1,170 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{commath}
+\usepackage{mathtools}
+\usepackage{adjustbox}
+\usepackage{setspace}
+\usepackage{bigints}
+\usepackage{hyperref}
+\usepackage{float}
+
+
+\title{Projektna naloga iz Matematičnega modeliranja}
+\author{Uroš Kosmač}
+
+\begin{document}
+\maketitle
+
+\section*{Problem}
+Problem, ki ga bom predstavil v tej projektni naloga je, kako opisati simetrično 
+diskretno verižnico s sodo mnogo členki, kjer je en členek določen z dolžino in maso.
+Podani podatki, bosta obesišči $(x_0, y_0)$, $(x_{n+1}, y_{n+1})$, ter dolžine $L_i$ in 
+mase $M_i$ vseh "palic".
+Problem bomo reševali po principu minimalne energije tj. palice podo postavljene
+tako, da je njihova energija minimalna pod vplivom sile teže.
+
+\section*{Matematični opis problema}
+Problema se lotimo, popolnoma enako kot smo to storili na predavanjih.
+Imamo obesišči $(x_0, y_0)$ in $(x_{n+1}, y_{n+1})$ ter množico $n$ 
+členkov \newline $\{(L_1, M_1), (L_2, M_2), \dots (L_{n+1}, M_{n+1})\}$. Dodatne predpostavke so sledeče:
+\begin{itemize}
+    \item $n+1$ je sodo oz. $n$ je liho,
+    \item $y_i = y_{n+1-i}$ (simetričnost),
+    \item $x_i - x_{i-1} = x_{n-i+2} - x_{n-i+1}$ (simetričnost),
+    \item $L_i = L_{n+2-i}$, kjer je $i = 1, 2, $\dots$ \frac{n+1}{2}$,
+    \item $M_i = M_{n+2-i}$, kjer je $i = 1, 2, $\dots$\frac{n+1}{2}$.
+\end{itemize}
+
+Potencialna energija verižnic, ki jo želimo minimizirati je:
+\begin{align}
+    W_p = \sum_{i=1}^{n+1} M_i g \frac{y_i + y_{i+1}}{2}
+\end{align}
+
+Ker želimo, da so členki povezani, dodamo še pogoje:
+\begin{align}
+    d((x_i, y_i). (x_{i+1}, y_{i+1})) = (x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2 = L_{i+1} 
+\end{align}
+
+Poslužimo se metode vezanih ekstemov in definiramo funkcijo:
+\begin{align}
+    g(x,y, \lambda) =  \sum_{i=1}^{n+1} \Big( M_i g \frac{y_i + y_{i+1}}{2} + \lambda_i((x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2 - L_i) \Big)
+\end{align}
+
+Odvajamo po spremenljivkah $x_i$, $y_i$ in $\lambda_i$ in dobimo sistem enačb:
+\begin{align*}
+    \lambda_i (x_i - x_{i-1}) - \lambda_{i+i}(x_{i+1} - x_i) &= 0 \, & i = 1, \dots,n \\
+    \lambda_i (y_i - y_{i-1}) - \lambda_{i+i}(y_{i+1} - y_i) &= - \frac{M_i + M_{i+1}}{4} & i = 1, \dots,n\\
+    (x_i - x_{i-1})^2 + (y_i - y_{i-1})^2 &= L_i^2 \, & i = 1, \dots,n+1
+\end{align*}
+
+Zaradi preglednosti uvedemo nove spremenljivke
+
+\begin{align*}
+    \xi_i &= x_i - x_{i-1} \, , \quad  i = 1,\dots,n+1 \\
+    \eta_i &= y_i - y_{i-1} \, , \quad  i = 1,\dots,n+1 \\
+    \mu_i &= \frac{M_i + M_{i+1}}{2} \, , \quad  i = 1,\dots,n \\
+\end{align*}
+
+Ekvivalenten sistem ima obliko:
+
+\begin{align}
+    \lambda_i \xi_i &= \lambda_{i+i}\xi_{i+1} \, & i = 1, \dots,n \\
+    \lambda_i \eta_i &= \lambda_{i+i}\eta_{i+1} - \frac{\mu_i}{2} & i = 1, \dots,n \\
+    \xi_i^2 + \eta_i^2 &= L_i^2 \, & i = 1, \dots,n+1 \label{pitagora}
+\end{align}
+
+Isto kot smo naredili na predavanjih poenostavimo sistem v sledečo obliko:
+
+\begin{align}
+    \lambda_i \xi_i &= - \frac{1}{2u} \, , \quad  i = 1,\dots,n+1 ,\\[1.05em]
+    v &= \frac{\eta_1}{\xi_1},\\
+    \frac{\eta_i}{\xi_i} &= v - u \sum_{j=1}^{i-1}\mu_j \, , \quad  i = 1,\dots,n+1.  \label{v-u_en}
+\end{align}
+Konstanto $u$ moramo še določiti. Iz enačb \ref{pitagora} in \ref{v-u_en} dobimo
+izražavo za $\xi_i$
+\begin{align}
+    \xi_i = \frac{L_i}{\sqrt{1 + (v - u \sum_{j=1}^{i-1}\mu_j)^2}} \,.
+    \label{ksii}
+\end{align}
+Sedaj ko imamo $\xi_i$ iz enačbe \ref{v-u_en} dobimo še izražavo za $\eta_i$
+
+\begin{align}
+    \eta_i = \frac{L_i}{\sqrt{1 + (v - u \sum_{j=1}^{i-1}\mu_j)^2}}\cdot \Big(v - u \sum_{j=1}^{i-1}\mu_j\Big) 
+\end{align}
+Da, dobimo enostavno zvezo med $u$ in $v$ bomo pogledali kaj se zgodi z enačbo
+\ref{v-u_en}, ko vstavimo indeks za srednji člen tj. $k = \frac{n+1}{2}$.
+Najprej, poglejmo kako se predpostavki o simetričnosti prevedeta na $\xi_i$ in $\eta_i$.
+\begin{align}
+    \xi_i &= x_i - x_{i-1} = x_{n-i+2} - x_{n-i+1} = \xi_{n-i+2} \label{eq:ksi}\\
+    \eta_i &= y_i - y_{n-1} = y_{n-i+1} - y_{n-i+2} = - \eta_{n-i+2}
+    \label{eq:eta}
+\end{align}
+Sedaj v \ref{eq:ksi} in \ref{eq:eta} vstavimo indeks $k = \frac{n+1}{2}$, da dobimo zvezi $\xi_k = \xi_{k+1}$ in $\eta_k = - \eta_{k+1}$. Vstavimo v enačbo
+\ref{v-u_en}
+\begin{align*}
+    v - u \sum_{j=1}^{k-1}\mu_j &= \frac{\eta_k}{\xi_k} = - \frac{\eta_{k+1}}{\xi_{k+1}} = - \Big(v - u \sum_{j=1}^{k}\mu_j\Big) \Rightarrow \\
+    v &= u\Big( \sum_{j=1}^{k-1}\mu_j + \frac{\mu_k}{2} \Big)
+\end{align*}
+Sedaj, ko imamo to izražavo za $v$, jo vstavimo \ref{ksii}:
+\begin{align*}
+    \xi_i &= \frac{L_i}{\sqrt{1 + (v - u \sum_{j=1}^{i-1}\mu_j)^2}} \\
+            &= \frac{L_i}{\sqrt{1 + (u (\sum_{j=1}^{k-1}\mu_j + \frac{\mu_k}{2})- u \sum_{j=1}^{i-1}\mu_j)^2}} \\
+            &= \frac{L_i}{\sqrt{1 + (u(\sum_{j=1}^{k-1}\mu_j - \sum_{j=1}^{i-1}\mu_j + \frac{\mu_k}{2}))^2}} \, , \quad  i = 1,\dots,n+1
+\end{align*}
+Zaradi simetrije $\xi_i$-ja je dovolj če vsoto v zgornjem korenu seštejemo le do 
+indeksa srednje točke tj. $k = \frac{n+1}{2}$. Potem se nam, dokončno poenostavi v 
+\begin{align*}
+    \xi_i(u) =  
+    \begin{cases}
+        \frac{L_i}{\sqrt{1 + (u\sum_{j=i}^{k-1}\mu_j + u\frac{\mu_k}{2})^2}}, &\text{za} \quad i = 1,\dots,l-1 \\
+        \frac{L_i}{\sqrt{1 + (u\frac{\mu_k}{2})^2}}, &\text{za} \quad i = l
+    \end{cases} 
+\end{align*}
+Sedaj dobimo sistem enačb:
+
+\begin{align*}
+    U(u,v) &= \sum_{j=1}^{n+1} \xi_j - (x_{n+1} - x_0) = 0 \\
+    V(u,v) &= \sum_{j=1}^{n+1} \eta_j - (y_{n+1} - y_0) = 0
+\end{align*}
+Da sistem dodatno poenostavimo, pri prvi enačbi zgornjega sistema upoštevamo simetrijo $\xi_i$, kar pomeni, da je dovolj da seštejemo do $k$. Pri drugi enačbi
+sistema lahko zapišemo $y_{n+1} - y_0$ na sledeč način:
+\begin{align*}
+    y_{n+1} - y_0 &= (y_{n+1} - y_{n}) + (y_{n} - y_{n-1}) + (y_{n-1} - y_{n-2}) + \dots + (y_{1} - y_{0}) \\
+            &= \quad \> \> \eta_{n+1} \quad \> \> + \eta_{n} \quad \> \> + \eta_{n-1} \quad \> \> + \dots + \quad \> \>\eta_1 = \sum_{j=1}^{n+1} \eta_j
+\end{align*}
+Vidimo, da je druga enačba trivialno zadoščena, zato nam ostane le:
+
+\begin{align}
+    U(u) &= 2 \sum_{j=1}^{l} \xi_j(u) - (x_{n+1} - x_0) = 0 \label{en_U}
+\end{align}
+Če sedaj definiciji $\xi_i$ in $\eta_i$ seštejemo do $i$-ja, dobimo enačbi za 
+točke verižnice
+\begin{align}
+    \sum_{j=1}^i \xi_i &= \sum_{j=1}^i (x_i - x_{i-1}) = x_i - x_0 \Rightarrow \quad x_i = x_0 + \sum_{j=1}^i \xi_i \\
+    \sum_{j=1}^i \eta_i &= \sum_{j=1}^i (y_i - y_{i-1}) = y_i - y_0 \Rightarrow \quad y_i = y_0 + \sum_{j=1}^i \eta_i 
+\end{align}
+\\
+\begin{figure}[h]
+    \center
+	\includegraphics[scale=0.1]{sim_ver}
+	\caption{Homogena simetricna veriznica, kjer si vse dolzine 1}
+\end{figure}
+
+\begin{thebibliography}{99}
+
+    \bibitem{zak}
+    E.~Zakrajšek, \emph{Verižnica}, 6. 10. 1999, [ogled 2.~9.~2021], dostopno na \url{https://ucilnica2021.fmf.uni-lj.si/pluginfile.php/8283/mod_resource/content/2/predavanja/veriznica/veriznica.pdf}.
+\end{thebibliography}
+
+\end{document}
