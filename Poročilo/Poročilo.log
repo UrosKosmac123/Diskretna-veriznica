@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.22)  11 JUN 2023 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.22)  24 JUL 2023 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.tex"
-(/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.tex
+**/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.tex
+(/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -571,7 +571,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box42
 \@float@everytoks=\toks44
 \@floatcapt=\box43
-) (/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux)
+) (/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux)
 \openout1 = `Poročilo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -633,7 +633,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- (/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out) (/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out)
+ (/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out) (/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out)
 \@outlinefile=\write4
 \openout4 = `Poročilo.out'.
 
@@ -680,9 +680,9 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 42.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 57.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -713,7 +713,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 168.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 168.
-[4 </Users/uroskosmac/Desktop/Modeliranje projekt/sim_ver.jpg>]
+[4 </Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/sim_ver.jpg>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining slovene shorthand "|
@@ -721,7 +721,7 @@ Package babel Info: Redefining slovene shorthand "|
  [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
- (/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux)
+ (/Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `Poročilo.out' has not changed.
@@ -730,14 +730,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
  19744 strings out of 492649
- 362171 string characters out of 6129621
+ 362364 string characters out of 6129621
  443444 words of memory out of 5000000
  23202 multiletter control sequences out of 15000+600000
  54597 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,77p,465b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,77p,478b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "/Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.pdf" (5 pages, 282683 bytes).
+Output written on /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.pdf (5 pages, 282594 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams

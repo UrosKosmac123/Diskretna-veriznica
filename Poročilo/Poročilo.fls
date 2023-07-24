@@ -1,9 +1,9 @@
-PWD /Users/uroskosmac/Desktop/Modeliranje projekt
+PWD /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.tex
-OUTPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.log
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.tex
+OUTPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.log
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
@@ -212,9 +212,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux
-OUTPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux
+OUTPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -230,14 +230,14 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-OUTPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-OUTPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.pdf
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+OUTPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+OUTPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.pdf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -290,16 +290,16 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/sim_ver.jpg
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/sim_ver.jpg
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/sim_ver.jpg
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/sim_ver.jpg
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/sim_ver.jpg
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/sim_ver.jpg
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.aux
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
-INPUT /Users/uroskosmac/Desktop/Modeliranje projekt/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.aux
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
+INPUT /Users/uroskosmac/Desktop/Faks/Diskretna-veriznica/Poročilo/Poročilo.out
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
